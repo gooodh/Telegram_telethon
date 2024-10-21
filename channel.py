@@ -9,8 +9,6 @@ from telethon.tl.types import PeerChannel
 
 from config import api_id, api_hash, phone
 
-channel = -1001930594903
-
 
 api_hash = str(api_hash)
 
