@@ -11,11 +11,11 @@ from config import api_id, api_hash, phone
 
 
 api_hash = str(api_hash)
-# all_users = []
-# Create the client and connect
+
 client = TelegramClient("anon", api_id, api_hash)
 
 async def fetch_participants(channel):
+    '''getting all users of the group by the limit, written by gpt'''
     participants = await client(GetParticipantsRequest(
         channel,
         offset=0,
